@@ -1,6 +1,6 @@
 # 첫백일+ · 개인정보처리방침과 지원
 
-보호자용 첫 100일 기록 앱의 공식 안내 페이지입니다.
+아기의 첫 100일과 그 이후를 기록하는 보호자용 앱의 공식 안내 페이지입니다.
 
 - 개인정보처리방침: https://hosunglabs.github.io/hundred-days-privacy/
 - 앱 지원: https://hosunglabs.github.io/hundred-days-privacy/support.html
