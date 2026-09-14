@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"><title>함께 기록 초대 · 첫백일+</title>
+<style>body{margin:0;background:#f8f7f2;color:#34473d;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif}main{max-width:430px;margin:auto;padding:72px 28px;text-align:center}.brand{font-weight:700;color:#648775}h1{font-size:29px;letter-spacing:-1px;margin:34px 0 16px}p{line-height:1.75;color:#68776d;font-size:16px}a{display:block;margin:28px 0;padding:18px;background:#648775;color:white;text-decoration:none;border-radius:18px;font-weight:700}small{display:block;line-height:1.7;color:#78847c}a[hidden]{display:none}</style></head>
+<body><main><div class="brand">첫백일 ✦</div><h1 id="title">같은 아기의 하루를<br>함께 기록해요</h1><p id="detail">첫백일+ 앱에서 초대를 열어 주세요.<br>상대방의 확인 후 기록이 연결돼요.</p><a id="open" hidden rel="noreferrer">앱에서 초대 열기</a><small>초대 링크는 함께 기록할 보호자 한 명에게만 보내 주세요.<br>앱이 없다면 먼저 설치한 뒤 이 링크를 다시 열어 주세요.</small></main>
+<script>
+// The fragment is never sent to this static host. No analytics or external script.
+const fragment=location.hash.slice(1);
+const valid=/^v1\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\.[0-9a-f]{64}\.[0-9a-f]{64}$/i.test(fragment);
+if(valid){const link=document.getElementById('open');link.href='firstdays://family#'+fragment;link.hidden=false;}
+else{document.getElementById('title').textContent='초대 링크를 확인해 주세요';document.getElementById('detail').textContent='보호자에게 새 초대 링크를 요청해 주세요.';}
+</script></body></html>
